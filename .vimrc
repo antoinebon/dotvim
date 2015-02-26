@@ -507,6 +507,8 @@ set nocompatible
                             \ autocmd BufWritePre <buffer> :call
                             \ <SID>StripTrailingWhitespace()
             augroup END
+
+            nnoremap <leader>ls :call <SID>StripTrailingWhitespace()<CR>
         " }
     " }
 " }

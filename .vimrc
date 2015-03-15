@@ -108,6 +108,8 @@ set nocompatible
     Plugin 'elzr/vim-json'
     " Less
     Plugin 'groenewege/vim-less'
+    " Haskell
+    Plugin 'eagletmt/ghcmod-vim'
 
     " DEBUGGING
     Plugin 'joonty/vdebug'              " Go to files
@@ -797,4 +799,14 @@ set nocompatible
             \    "marker_open_tree" : '▾'
             \}
     " }
+
+    " ghcmod {
+            " Haskell post write lint and check with ghcmod
+            " $ `cabal install ghcmod` if missing and ensure
+            " ~/.cabal/bin is in your $PATH.
+            "if !executable("ghcmod")
+                "autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+            "endif
+    " }
+
 " }

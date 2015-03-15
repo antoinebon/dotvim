@@ -110,6 +110,7 @@ set nocompatible
     Plugin 'groenewege/vim-less'
     " Haskell
     Plugin 'eagletmt/ghcmod-vim'
+    Plugin 'eagletmt/neco-ghc'          " A completion plugin for Haskell, using ghc-mod
 
     " DEBUGGING
     Plugin 'joonty/vdebug'              " Go to files
@@ -718,6 +719,7 @@ set nocompatible
             let g:ycm_complete_in_comments                = 0 " Completion in comments
             let g:ycm_complete_in_strings                 = 1 " Completion in string
             let g:ycm_min_num_identifier_candidate_chars  = 2
+            let g:ycm_semantic_triggers = {'haskell' : ['.']}
 
             " remap Ultisnips for compatibility for YCM
             let g:UltiSnipsExpandTrigger = '<C-j>'
